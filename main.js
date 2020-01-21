@@ -1,4 +1,3 @@
-
 var canvas = document.getElementsByTagName("canvas")[0];
 var context = canvas.getContext("2d");
 var height = canvas.height = window.innerHeight;
@@ -22,7 +21,7 @@ function getRandomColor() {
     return color;
 }
 
-	function onMouseMove(e) {
+    function onMouseMove(e) {
     if (mouseClicked) {
         context.beginPath();
         context.arc(e.clientX, e.clientY, 7.5, 0, Math.PI * 2, false);
