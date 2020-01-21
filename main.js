@@ -21,12 +21,16 @@ function getRandomColor() {
     return color;
 }
 
-    function onMouseMove(e) {
+function onMouseMove(e) {
     if (mouseClicked) {
         context.beginPath();
         context.arc(e.clientX, e.clientY, 7.5, 0, Math.PI * 2, false);
         context.lineWidth = 5;
         context.strokeStyle = getRandomColor();
         context.stroke();
+    }
+
+function clearcanvas() {
+    document.getElementsByTagName("canvas").style.backgroundColor = "black";
     }
 }
