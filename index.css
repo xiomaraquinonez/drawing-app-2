@@ -1,0 +1,11 @@
+canvas {
+	position: absolute;
+	left: 290px;
+	top: 0px;
+	overflow: hidden;
+	background-color: black;
+}
+
+body {
+	background-color: #c3dedb;
+}
