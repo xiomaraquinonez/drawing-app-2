@@ -2,37 +2,21 @@
 <html>
 
 <head>
+	<link rel="stylesheet" href="index.css">
+	<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
 	 <meta charset="utf-8">
 	 <title>CLICK and DRAW</title>
- 	<style>
-	  	canvas {
-	  		position: absolute;
-	  		left: 290px;
-	  		top: 0px;
-	   		overflow: hidden;
-	   		background-color: black;
-	  }
-
-	  body {
-	  	background-color: #c3dedb;
-	  }
-
-	 </style>
+ 	
 </head>
 
 <body>
-	 <canvas>Please update your browser</canvas>
-	 <script src="main.js"></script>
-
-	 <h2>Instructions:</h2>
-
-	<p>Click on the part of the screen that is black</p>
-	<p>Begin moving the mouse around</p>
-	<p>Draw whatever you want</p>
-	<p>Click the button to clear the screen<p>		
-
-	<button onclick="clearcanvas()">Clear</button>
-
+	<div id="app">
+		 <canvas>Please update your browser</canvas>
+		 <button v-on:click="clearcanvas">Clear</button>
+		 <sidebar>
+	</div>
+	<script src="main.js"></script>
 </body>
 
 </html>
